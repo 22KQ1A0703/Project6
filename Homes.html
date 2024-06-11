@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Beside Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <style>
+         @media Screen and (min-width:10px) and (max-width:700px){
+                        body {
+                            background-image: url("ho.jpg");
+                            background-size: cover;
+                        }
+                    }
+                   
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color:violet;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.video-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    flex: 1;
+}
+
+.content-container h2 {
+    margin-top: 0;
+}
+
+.content-container p {
+  
+    line-height: 1.6;
+}
+.abc{
+    
+    display: flex;
+    align-items: center; 
+}
+    .image {
+            max-width: 50%; 
+            margin-right: 20px;
+           text-align: right;
+        }
+        .text {
+            flex: 1; 
+            padding: 20px;
+        }
+        .conta {
+            display: flex;
+            align-items: center; 
+        }
+
+        .text {
+            flex: 1; 
+            padding: 20px;
+        }
+
+        .image {
+            max-width: 50%; 
+            margin-left: 20px;
+        }
+        h2{
+            color:darkred
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="juices.html">
+        <h1>
+
+        </h1>
+        <button onclick="addToCart('Product 2', 40)">Back</button>
+    </form>
+    <body background="ho.jpg">
+    <h1>Welcome to Our Fresh Juice Store</h1><br>
+    <div class="conta">
+        <div class="text">
+            <center>
+                <h2>Banana Juice</h2>
+            </center>
+            <p>
+                Some of the most important benefits of banana juice include raising energy levels, calming effect in stress and anxiety, increasing immunity, detoxifying the body, strengthening bones, improving sleep quality, lowering blood pressure, supporting digestion and speeding up the recovery process.
+            </p>
+        </div>
+        <div class="image">
+            <img src="bana.jpg" alt="Bakery Image">
+        </div>
+    </div><br>
+    <div class="conta">
+        <div class="text">
+            <center>
+                <h2>Greenapple Juice</h2>
+            </center>
+            <p>
+                Green Apples are packed with plenty of Potassium, and this mineral can do wonders for your heart health. It can lower your blood pressure, reduce your risk of stroke, and contribute to overall healthy cardiovascular functioning.
+              </p> 
+              </div>
+                    <div class="image">
+                        <img src="gree.jpg" alt="Bakery Image">
+                    </div>
+                </div>
+                <br>
+            </body>
+            <body>
+    <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="straw.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content-container">
+            <center>
+                            <h2>Strawberry Juice</h2>
+            <p>Antioxidants in strawberries, including vitamin C, can support your immune system and may lower your chances of getting sick when you're around germs. They may also help curb inflammation, manage your blood sugar, and guard against health conditions like high cholesterol, cancer, heart disease, stroke, and diabetes.</p>
+        </div>
+    </div>
+<center>
+            <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="pine.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content-container">
+            <h2>Pineapple juice</h2>
+            <p> Pineapple juice contains a rich assortment of vitamins, minerals, and antioxidants. Possible health benefits of pineapple juice include boosting the immune system, aiding digestion, promoting healthy skin, and more. People have long used pineapple as an ancient home remedy for digestive issues and inflammation.</p>
+        </div>
+        </div>
+        </center>
+        <center>
+            <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="man.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        <div class="content-container">
+            <h2>Mango juice</h2>
+                <p> Mango juice contains, vitamin K helps your blood clot effectively and helps prevent anemia. It also plays an important role in strengthening your bones. Mangoes are also rich in vitamin C, which is important for forming blood vessels and healthy collagen, as well as helping you heal.</p>
+        </div>
+    </div>
+</body>
+</html>

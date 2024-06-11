@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title>Registration Form</title>
+  <video autoplay muted loop id="myVideo">
+        
+    <source src="reg.mp5.mp4" type="video/mp4">
+
+    your browser not support
+
+</video>
+<style>
+    body{
+        background-size: cover;
+    }h1{
+        color:red;
+    }
+    div{
+        color:aquamarine;
+        
+    }
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: relative;
+  bottom: 0;
+  color:aquamarine;
+  width: 100%;
+  padding: 20px;
+  width: 300px;
+        height: 400px;
+           
+        
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+
+  color:red;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: pink;
+}
+</style>
+<body background="lo.jpg">
+<body>
+  <center>
+    
+    <div class="content">   <h1>Login Form</h1>
+   
+    <br>
+    <h1>
+
+    </h1>
+  
+  <form action="juices.html" registrationForm" onsubmit="return validateForm()">
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <h1>
+
+    </h1>
+   
+</h1>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <h1>
+
+    </h1>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+ <h1> 
+
+ </h1>  
+ <input type="submit">
+  <script>
+    function validateForm() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return false;
+      }
+
+      // Validate other fields (you can add more validation as needed)
+      if (username.length < 4 || username.length > 20) {
+        alert("Username must be between 4 and 20 characters");
+        return false;
+      }
+     
+
+      return true;
+    }
+
+   
+  </script>
+</body>
+</html>
